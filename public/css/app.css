@@ -10662,3 +10662,12 @@ a.text-dark:focus {
   }
 }
 
+body {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+nav.navbar.navbar-expend-lg {
+  margin-bottom: 20px;
+}
+
