@@ -32,7 +32,9 @@ class UsersController extends Controller
         ]);
 
         Auth::login($user);
+
         session()->flash('success', '欢迎，您将在这里开启一段新旅程');
+
         return redirect()->route('users.show', [$user]);
     }
 }
