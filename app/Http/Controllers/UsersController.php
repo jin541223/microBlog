@@ -47,8 +47,8 @@ class UsersController extends Controller
     public function update(User $user, Request $request)
     {
         $this->validate($request, [
-            'name' => 'required|max:50',
-            'password' => 'required|confirmed|min:6'
+            'name'      => 'required|max:50',
+            'password'  => 'required|confirmed|min:6'
         ]);
 
         $data = [];
