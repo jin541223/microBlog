@@ -6,7 +6,7 @@
 		<div class="row">
 			<div class="col-md-8">
 				<section class="status_form">
-				@include('shared._status_form')
+					@include('shared._status_form')
 				</section>
 				<h4>动态列表</h4>
 				<hr>

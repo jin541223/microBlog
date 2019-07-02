@@ -7,6 +7,9 @@ use Auth;
 
 class StaticPagesController extends Controller
 {
+    /**
+     * 首页
+     */
     public function home()
     {
         $feedItems = [];
