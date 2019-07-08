@@ -95,7 +95,7 @@ class User extends Authenticatable
 
     public function unfollow($user_ids)
     {
-        if (!is_array($userIds)) {
+        if (!is_array($user_ids)) {
             $user_ids = compact('user_ids');
         }
 
