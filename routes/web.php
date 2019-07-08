@@ -31,6 +31,9 @@ Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm
 Route::post('password/reset', 'Auth\ResetPasswordController@reset')->name('password.update');
 // 动态
 Route::resource('statuses', 'StatusesController', ['only' => ['store', 'destroy']]);
+// 关注、粉丝
+Route::get('/users/{user}/followings', 'UsersController@followings')->name('users.followings');
+Route::get('/users/{user}/followers', 'UsersController@followers')->name('users.followers');
 
 // Route::get('/', function () {
 //     return view('welcome');
